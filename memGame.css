@@ -1,0 +1,28 @@
+﻿.gridContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minMax(300px, 1fr));
+    grid-auto-rows: 300px;
+    grid-gap: 5px;
+    background-color: red;
+}
+
+.gridContainer > * {
+    display: flex;   /*This Segment makes everything stay in the very middle of the boxes. Very important.*/
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: rebeccapurple;
+}
+
+.gridContainer > img{
+    max-height: 300px;
+    width: 300px;
+    filter: contrast(0%);
+    -webkit-filter: contrast(0%);
+}
+
+
+body
+{
+    background-color: blue;
+}
